@@ -1,0 +1,17 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.fixed-column {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
+
+.scrollable-column {
+  margin-left: 256px;
+  height: 100vh;
+  overflow-y: auto;
+}
