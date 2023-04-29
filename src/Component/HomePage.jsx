@@ -73,10 +73,7 @@ const HomePage = () => {
     window.location.reload();
   };
 
-   
   const { addItem } = useCart();
-
-
 
   return (
     <>
@@ -140,6 +137,7 @@ const HomePage = () => {
                     progress: undefined,
                     theme: "light",
                   });
+                  handleRemove(mapCardProps.id)
                 }}
               >
                 Bookmark
