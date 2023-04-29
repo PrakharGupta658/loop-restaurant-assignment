@@ -70,6 +70,7 @@ const HomePage = () => {
 
   const handleRemove = (id) => {
     localStorage.removeItem("mapCard-" + id);
+
     window.location.reload();
   };
 
@@ -137,7 +138,10 @@ const HomePage = () => {
                     progress: undefined,
                     theme: "light",
                   });
-                  handleRemove(mapCardProps.id)
+                  setTimeout(()=>{
+                    handleRemove(mapCardProps.id);
+                  },[2000]);
+                  
                 }}
               >
                 Bookmark
